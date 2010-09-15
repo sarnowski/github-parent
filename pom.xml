@@ -23,7 +23,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/sarnowski/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:git@github.com/sarnowski/${project.artifactId}.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:sarnowski/${project.artifactId}.git</developerConnection>
     </scm>
 
     <issueManagement>

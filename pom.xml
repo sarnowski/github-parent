@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.sarnowski</groupId>
+    <artifactId>github-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <name>github-parent</name>
+    <url>http://github.com/sarnowski/${project.artifactId}</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/sarnowski/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:git@github.com/sarnowski/${project.artifactId}.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>github.com</system>
+        <url>http://github.com/sarnowski/${project.artifactId}/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>localgithub</id>
+            <name>Local github.com release folder</name>
+            <url>file://${user.home}/github/repository</url>
+        </repository>
+
+        <site>
+            <id>localgithub</id>
+            <name>Local github.com site folder</name>
+            <url>file://${user.home}/github/projects</url>
+        </site>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>sarnowski.github.com</id>
+            <name>Tobias Sarnowski's Maven Repository</name>
+            <url>http://sarnowski.github.com/repository</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sarnowski.github.com</id>
+            <name>Tobias Sarnowski's Maven Repository</name>
+            <url>http://sarnowski.github.com/repository</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

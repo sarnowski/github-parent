@@ -41,7 +41,7 @@
         <site>
             <id>localgithub</id>
             <name>Local github.com site folder</name>
-            <url>file://${user.home}/github/projects</url>
+            <url>file://${user.home}/github/projects/${project.artifactId}</url>
         </site>
     </distributionManagement>
 
